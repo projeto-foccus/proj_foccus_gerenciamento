@@ -1,0 +1,39 @@
+--- Início da importação: 2025-04-30 14:15:34 ---
+Arquivo recebido: 29-04-25_Aluno_Teste GForms (1).csv
+Caminho temporário: C:\xampp\tmp\php8B6.tmp
+Arquivo aberto com sucesso
+Cabeçalho: Carimbo de data/hora,R.A DO ALUNO,NOME DO ALUNO,DATA DE NASCIMENTO,INEP DA ESCOLA,NOME DO RESPONSÁVEL,TIPO DE PARENTESCO,E-MAIL DO RESPONSÁVEL,TELEFONE DO RESPONSÁVEL
+Linha 1: 29/04/2025 16:33:44,20250101,Ana Clara Silva,12/03/2011,12345678,Juliana Silva,Mãe,juliana.silva@email.com,(11) 91234-5678
+ERRO: Linha com poucos dados
+Linha 2: 29/04/2025 16:35:54,20250102,Bruno Henrique Lima,25/08/2010,12345678,Marcos Lima,Padrasto,marcos.lima@email.com,(11) 99876-5432
+ERRO: Linha com poucos dados
+Linha 3: 29/04/2025 16:36:51,20250103,Carla Mendes Souza,04/05/2012,23456789,Fernanda Souza,Mãe,fernanda.souza@email.com,(21) 98765-4321
+ERRO: Linha com poucos dados
+Linha 4: 29/04/2025 16:38:13,20250104,Daniel Oliveira Rocha,17/11/2009,23456789,Ricardo Rocha,Avô,ricardo.rocha@email.com,(31) 98888-7777
+ERRO: Linha com poucos dados
+Linha 5: 29/04/2025 16:39:18,20250105,Érica Tavares Costa,30/06/2011,12375642,Patrícia Costa,Mãe,patricia.costa@email.com,(41) 97777-6666
+ERRO: Linha com poucos dados
+Linha 6: 29/04/2025 16:40:41,20250106,Felipe Gomes Araújo,22/12/2010,34567890,André Araújo,Pai,andre.araujo@email.com,(51) 96666-5555
+ERRO: Linha com poucos dados
+Linha 7: 29/04/2025 16:41:36,20250107,Gabriela Nunes Prado,09/09/2012,45678901,Camila Nunes,Avó,camila.nunes@email.com,(61) 95555-4444
+ERRO: Linha com poucos dados
+Linha 8: 29/04/2025 16:42:25,20250108,Heitor Martins Freitas,14/02/2011,56789012,Fábio Freitas,Avó,fabio.freitas@email.com,(71) 94444-3333
+ERRO: Linha com poucos dados
+Linha 9: 29/04/2025 16:47:11,20250109,Isabela Ferreira Dias,03/07/2010,67890123,Luciana Ferreira,Mãe,luciana.ferreira@email.com,(81) 93333-2222
+ERRO: Linha com poucos dados
+Linha 10: 29/04/2025 16:48:04,20250110,João Pedro Ramos,27/04/2009,78901234,Marcelo Ramos,Pai,marcelo.ramos@email.com,(91) 92222-1111
+ERRO: Linha com poucos dados
+Linha 11: 29/04/2025 16:49:40,20250111,Karen Souza Almeida,19/10/2011,89012345,Paula Almeida,Mãe,paula.almeida@email.com,(31) 91111-0000
+ERRO: Linha com poucos dados
+Linha 12: 29/04/2025 16:50:36,20250112,Leonardo Costa Pinto,08/01/2010,90123456,Rodrigo Pinto,Avô,rodrigo.pinto@email.com,(11) 90000-8888
+ERRO: Linha com poucos dados
+Linha 13: 29/04/2025 16:51:21,20250113,Mariana Lopes Teixeira,15/06/2012,90123456,Simone Teixeira,Madrasta,simone.teixeira@email.com,(21) 98888-7777
+ERRO: Linha com poucos dados
+Linha 14: 29/04/2025 16:54:27,20250114,Nicolas Vieira Santos,13/03/2011,89012345,Adriana Santos,Avó,adriana.santos@email.com,	(41) 97777-1234
+ERRO: Linha com poucos dados
+Linha 15: 29/04/2025 17:01:42,20250115,Olivia Rocha Barreto,01/12/2009,78901234,Thiago Barreto,Pai,thiago.barreto@email.com,(31) 94444-5678
+ERRO: Linha com poucos dados
+--- Resumo ---
+Linhas lidas: 15
+Registros inseridos: 0
+Registros ignorados: 0

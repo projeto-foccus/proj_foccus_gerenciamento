@@ -1,0 +1,231 @@
+2025-06-30 10:29:35 | modalidade: 8 | escola: 23456789 | periodo: Manhã
+2025-06-30 10:29:35 | SQL: SELECT DISTINCT s.serie_id, s.serie_desc, s.periodo
+                FROM serie s
+                INNER JOIN tipo_modalidade tm ON s.fk_mod_id = tm.id_tipo_modalidade
+                INNER JOIN modalidade m ON tm.id_tipo_modalidade = m.fk_id_modalidade
+                WHERE m.id_modalidade = :modalidade AND m.inep_escola = :escola AND s.periodo = :periodo ORDER BY s.serie_desc
+2025-06-30 10:29:35 | ERRO: SQLSTATE[42S22]: Column not found: 1054 Unknown column 's.periodo' in 'field list'
+2025-06-30 10:29:42 | modalidade: 63 | escola: 15874269 | periodo: Manhã
+2025-06-30 10:29:42 | SQL: SELECT DISTINCT s.serie_id, s.serie_desc, s.periodo
+                FROM serie s
+                INNER JOIN tipo_modalidade tm ON s.fk_mod_id = tm.id_tipo_modalidade
+                INNER JOIN modalidade m ON tm.id_tipo_modalidade = m.fk_id_modalidade
+                WHERE m.id_modalidade = :modalidade AND m.inep_escola = :escola AND s.periodo = :periodo ORDER BY s.serie_desc
+2025-06-30 10:29:42 | ERRO: SQLSTATE[42S22]: Column not found: 1054 Unknown column 's.periodo' in 'field list'
+2025-06-30 10:31:25 | modalidade: 63 | escola: 15874269 | periodo: 
+2025-06-30 10:31:25 | SQL: SELECT DISTINCT s.serie_id, s.serie_desc
+                FROM serie s
+                INNER JOIN tipo_modalidade tm ON s.fk_mod_id = tm.id_tipo_modalidade
+                INNER JOIN modalidade m ON tm.id_tipo_modalidade = m.fk_id_modalidade
+                WHERE m.id_modalidade = :modalidade AND m.inep_escola = :escola ORDER BY s.serie_desc
+2025-06-30 10:31:25 | resultado: [{"serie_id":7,"serie_desc":"6\u00ba Ano"}]
+2025-06-30 10:31:30 | modalidade: 63 | escola: 15874269 | periodo: Manhã
+2025-06-30 10:31:30 | SQL: SELECT DISTINCT s.serie_id, s.serie_desc
+                FROM serie s
+                INNER JOIN tipo_modalidade tm ON s.fk_mod_id = tm.id_tipo_modalidade
+                INNER JOIN modalidade m ON tm.id_tipo_modalidade = m.fk_id_modalidade
+                WHERE m.id_modalidade = :modalidade AND m.inep_escola = :escola ORDER BY s.serie_desc
+2025-06-30 10:31:30 | ERRO: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+2025-06-30 10:31:34 | modalidade: 63 | escola: 15874269 | periodo: 
+2025-06-30 10:31:34 | SQL: SELECT DISTINCT s.serie_id, s.serie_desc
+                FROM serie s
+                INNER JOIN tipo_modalidade tm ON s.fk_mod_id = tm.id_tipo_modalidade
+                INNER JOIN modalidade m ON tm.id_tipo_modalidade = m.fk_id_modalidade
+                WHERE m.id_modalidade = :modalidade AND m.inep_escola = :escola ORDER BY s.serie_desc
+2025-06-30 10:31:34 | resultado: [{"serie_id":7,"serie_desc":"6\u00ba Ano"}]
+2025-06-30 10:32:30 | modalidade: 63 | escola: 15874269 | periodo: 
+2025-06-30 10:32:30 | SQL: SELECT DISTINCT s.serie_id, s.serie_desc
+                FROM serie s
+                INNER JOIN tipo_modalidade tm ON s.fk_mod_id = tm.id_tipo_modalidade
+                INNER JOIN modalidade m ON tm.id_tipo_modalidade = m.fk_id_modalidade
+                WHERE m.id_modalidade = :modalidade AND m.inep_escola = :escola ORDER BY s.serie_desc
+2025-06-30 10:32:30 | resultado: [{"serie_id":7,"serie_desc":"6\u00ba Ano"}]
+2025-06-30 10:32:33 | modalidade: 63 | escola: 15874269 | periodo: Manhã
+2025-06-30 10:32:33 | SQL: SELECT DISTINCT s.serie_id, s.serie_desc
+                FROM serie s
+                INNER JOIN tipo_modalidade tm ON s.fk_mod_id = tm.id_tipo_modalidade
+                INNER JOIN modalidade m ON tm.id_tipo_modalidade = m.fk_id_modalidade
+                WHERE m.id_modalidade = :modalidade AND m.inep_escola = :escola ORDER BY s.serie_desc
+2025-06-30 10:32:34 | resultado: [{"serie_id":7,"serie_desc":"6\u00ba Ano"}]
+2025-06-30 10:34:05 | modalidade: 58 | escola: 15874269 | periodo: 
+2025-06-30 10:34:05 | SQL: SELECT DISTINCT s.serie_id, s.serie_desc
+                FROM serie s
+                INNER JOIN tipo_modalidade tm ON s.fk_mod_id = tm.id_tipo_modalidade
+                INNER JOIN modalidade m ON tm.id_tipo_modalidade = m.fk_id_modalidade
+                WHERE m.id_modalidade = :modalidade AND m.inep_escola = :escola ORDER BY s.serie_desc
+2025-06-30 10:34:05 | resultado: [{"serie_id":2,"serie_desc":"1\u00ba Ano"}]
+2025-06-30 10:34:08 | modalidade: 58 | escola: 15874269 | periodo: Tarde
+2025-06-30 10:34:08 | SQL: SELECT DISTINCT s.serie_id, s.serie_desc
+                FROM serie s
+                INNER JOIN tipo_modalidade tm ON s.fk_mod_id = tm.id_tipo_modalidade
+                INNER JOIN modalidade m ON tm.id_tipo_modalidade = m.fk_id_modalidade
+                WHERE m.id_modalidade = :modalidade AND m.inep_escola = :escola ORDER BY s.serie_desc
+2025-06-30 10:34:08 | resultado: [{"serie_id":2,"serie_desc":"1\u00ba Ano"}]
+2025-06-30 10:35:31 | modalidade: 58 | escola: 15874269 | periodo: 
+2025-06-30 10:35:31 | SQL: SELECT DISTINCT s.serie_id, s.serie_desc
+                FROM serie s
+                INNER JOIN tipo_modalidade tm ON s.fk_mod_id = tm.id_tipo_modalidade
+                INNER JOIN modalidade m ON tm.id_tipo_modalidade = m.fk_id_modalidade
+                WHERE m.id_modalidade = :modalidade AND m.inep_escola = :escola ORDER BY s.serie_desc
+2025-06-30 10:35:31 | resultado: [{"serie_id":2,"serie_desc":"1\u00ba Ano"}]
+2025-06-30 10:35:34 | modalidade: 58 | escola: 15874269 | periodo: Noite
+2025-06-30 10:35:34 | SQL: SELECT DISTINCT s.serie_id, s.serie_desc
+                FROM serie s
+                INNER JOIN tipo_modalidade tm ON s.fk_mod_id = tm.id_tipo_modalidade
+                INNER JOIN modalidade m ON tm.id_tipo_modalidade = m.fk_id_modalidade
+                WHERE m.id_modalidade = :modalidade AND m.inep_escola = :escola ORDER BY s.serie_desc
+2025-06-30 10:35:34 | resultado: [{"serie_id":2,"serie_desc":"1\u00ba Ano"}]
+2025-06-30 10:37:30 | modalidade: 58 | escola: 15874269 | periodo: 
+2025-06-30 10:37:30 | SQL: SELECT DISTINCT s.serie_id, s.serie_desc
+                FROM serie s
+                INNER JOIN tipo_modalidade tm ON s.fk_mod_id = tm.id_tipo_modalidade
+                INNER JOIN modalidade m ON tm.id_tipo_modalidade = m.fk_id_modalidade
+                WHERE m.id_modalidade = :modalidade AND m.inep_escola = :escola ORDER BY s.serie_desc
+2025-06-30 10:37:30 | resultado: [{"serie_id":2,"serie_desc":"1\u00ba Ano"}]
+2025-06-30 10:37:32 | modalidade: 58 | escola: 15874269 | periodo: Noite
+2025-06-30 10:37:32 | SQL: SELECT DISTINCT s.serie_id, s.serie_desc
+                FROM serie s
+                INNER JOIN tipo_modalidade tm ON s.fk_mod_id = tm.id_tipo_modalidade
+                INNER JOIN modalidade m ON tm.id_tipo_modalidade = m.fk_id_modalidade
+                WHERE m.id_modalidade = :modalidade AND m.inep_escola = :escola ORDER BY s.serie_desc
+2025-06-30 10:37:32 | resultado: [{"serie_id":2,"serie_desc":"1\u00ba Ano"}]
+2025-06-30 10:39:21 | modalidade: 58 | escola: 15874269 | periodo: 
+2025-06-30 10:39:21 | SQL: SELECT DISTINCT s.serie_id, s.serie_desc
+                FROM serie s
+                INNER JOIN tipo_modalidade tm ON s.fk_mod_id = tm.id_tipo_modalidade
+                INNER JOIN modalidade m ON tm.id_tipo_modalidade = m.fk_id_modalidade
+                WHERE m.id_modalidade = :modalidade AND m.inep_escola = :escola ORDER BY s.serie_desc
+2025-06-30 10:39:21 | resultado: [{"serie_id":2,"serie_desc":"1\u00ba Ano"}]
+2025-06-30 10:40:24 | modalidade: 64 | escola: 15874269 | periodo: 
+2025-06-30 10:40:24 | SQL: SELECT DISTINCT s.serie_id, s.serie_desc
+                FROM serie s
+                INNER JOIN tipo_modalidade tm ON s.fk_mod_id = tm.id_tipo_modalidade
+                INNER JOIN modalidade m ON tm.id_tipo_modalidade = m.fk_id_modalidade
+                WHERE m.id_modalidade = :modalidade AND m.inep_escola = :escola ORDER BY s.serie_desc
+2025-06-30 10:40:24 | resultado: [{"serie_id":8,"serie_desc":"7\u00ba Ano"}]
+2025-06-30 10:40:26 | modalidade: 64 | escola: 15874269 | periodo: Manhã
+2025-06-30 10:40:26 | SQL: SELECT DISTINCT s.serie_id, s.serie_desc
+                FROM serie s
+                INNER JOIN tipo_modalidade tm ON s.fk_mod_id = tm.id_tipo_modalidade
+                INNER JOIN modalidade m ON tm.id_tipo_modalidade = m.fk_id_modalidade
+                WHERE m.id_modalidade = :modalidade AND m.inep_escola = :escola ORDER BY s.serie_desc
+2025-06-30 10:40:26 | resultado: [{"serie_id":8,"serie_desc":"7\u00ba Ano"}]
+2025-06-30 10:40:44 | modalidade: 63 | escola: 15874269 | periodo: 
+2025-06-30 10:40:44 | SQL: SELECT DISTINCT s.serie_id, s.serie_desc
+                FROM serie s
+                INNER JOIN tipo_modalidade tm ON s.fk_mod_id = tm.id_tipo_modalidade
+                INNER JOIN modalidade m ON tm.id_tipo_modalidade = m.fk_id_modalidade
+                WHERE m.id_modalidade = :modalidade AND m.inep_escola = :escola ORDER BY s.serie_desc
+2025-06-30 10:40:44 | resultado: [{"serie_id":7,"serie_desc":"6\u00ba Ano"}]
+2025-06-30 23:41:13 | modalidade: 63 | escola: 15874269 | periodo: 
+2025-06-30 23:41:13 | SQL: SELECT DISTINCT s.serie_id, s.serie_desc
+                FROM serie s
+                INNER JOIN tipo_modalidade tm ON s.fk_mod_id = tm.id_tipo_modalidade
+                INNER JOIN modalidade m ON tm.id_tipo_modalidade = m.fk_id_modalidade
+                WHERE m.id_modalidade = :modalidade AND m.inep_escola = :escola ORDER BY s.serie_desc
+2025-06-30 23:41:13 | resultado: [{"serie_id":7,"serie_desc":"6\u00ba Ano"}]
+2025-06-30 23:41:18 | modalidade: 63 | escola: 15874269 | periodo: Manhã
+2025-06-30 23:41:18 | SQL: SELECT DISTINCT s.serie_id, s.serie_desc
+                FROM serie s
+                INNER JOIN tipo_modalidade tm ON s.fk_mod_id = tm.id_tipo_modalidade
+                INNER JOIN modalidade m ON tm.id_tipo_modalidade = m.fk_id_modalidade
+                WHERE m.id_modalidade = :modalidade AND m.inep_escola = :escola ORDER BY s.serie_desc
+2025-06-30 23:41:18 | resultado: [{"serie_id":7,"serie_desc":"6\u00ba Ano"}]
+2025-06-30 23:41:38 | modalidade: 35 | escola: 78901234 | periodo: Manhã
+2025-06-30 23:41:38 | SQL: SELECT DISTINCT s.serie_id, s.serie_desc
+                FROM serie s
+                INNER JOIN tipo_modalidade tm ON s.fk_mod_id = tm.id_tipo_modalidade
+                INNER JOIN modalidade m ON tm.id_tipo_modalidade = m.fk_id_modalidade
+                WHERE m.id_modalidade = :modalidade AND m.inep_escola = :escola ORDER BY s.serie_desc
+2025-06-30 23:41:38 | resultado: [{"serie_id":2,"serie_desc":"1\u00ba Ano"}]
+2025-06-30 23:41:54 | modalidade: 1 | escola: 12375642 | periodo: Manhã
+2025-06-30 23:41:54 | SQL: SELECT DISTINCT s.serie_id, s.serie_desc
+                FROM serie s
+                INNER JOIN tipo_modalidade tm ON s.fk_mod_id = tm.id_tipo_modalidade
+                INNER JOIN modalidade m ON tm.id_tipo_modalidade = m.fk_id_modalidade
+                WHERE m.id_modalidade = :modalidade AND m.inep_escola = :escola ORDER BY s.serie_desc
+2025-06-30 23:41:54 | resultado: [{"serie_id":1,"serie_desc":"Infantil"}]
+2025-06-30 23:42:47 | modalidade: 58 | escola: 15874269 | periodo: Manhã
+2025-06-30 23:42:47 | SQL: SELECT DISTINCT s.serie_id, s.serie_desc
+                FROM serie s
+                INNER JOIN tipo_modalidade tm ON s.fk_mod_id = tm.id_tipo_modalidade
+                INNER JOIN modalidade m ON tm.id_tipo_modalidade = m.fk_id_modalidade
+                WHERE m.id_modalidade = :modalidade AND m.inep_escola = :escola ORDER BY s.serie_desc
+2025-06-30 23:42:47 | resultado: [{"serie_id":2,"serie_desc":"1\u00ba Ano"}]
+2025-06-30 23:42:51 | modalidade: 63 | escola: 15874269 | periodo: Manhã
+2025-06-30 23:42:51 | SQL: SELECT DISTINCT s.serie_id, s.serie_desc
+                FROM serie s
+                INNER JOIN tipo_modalidade tm ON s.fk_mod_id = tm.id_tipo_modalidade
+                INNER JOIN modalidade m ON tm.id_tipo_modalidade = m.fk_id_modalidade
+                WHERE m.id_modalidade = :modalidade AND m.inep_escola = :escola ORDER BY s.serie_desc
+2025-06-30 23:42:52 | resultado: [{"serie_id":7,"serie_desc":"6\u00ba Ano"}]
+2025-06-30 23:42:56 | modalidade: 64 | escola: 15874269 | periodo: Manhã
+2025-06-30 23:42:56 | SQL: SELECT DISTINCT s.serie_id, s.serie_desc
+                FROM serie s
+                INNER JOIN tipo_modalidade tm ON s.fk_mod_id = tm.id_tipo_modalidade
+                INNER JOIN modalidade m ON tm.id_tipo_modalidade = m.fk_id_modalidade
+                WHERE m.id_modalidade = :modalidade AND m.inep_escola = :escola ORDER BY s.serie_desc
+2025-06-30 23:42:56 | resultado: [{"serie_id":8,"serie_desc":"7\u00ba Ano"}]
+2025-06-30 23:43:02 | modalidade: 62 | escola: 15874269 | periodo: Manhã
+2025-06-30 23:43:02 | SQL: SELECT DISTINCT s.serie_id, s.serie_desc
+                FROM serie s
+                INNER JOIN tipo_modalidade tm ON s.fk_mod_id = tm.id_tipo_modalidade
+                INNER JOIN modalidade m ON tm.id_tipo_modalidade = m.fk_id_modalidade
+                WHERE m.id_modalidade = :modalidade AND m.inep_escola = :escola ORDER BY s.serie_desc
+2025-06-30 23:43:02 | resultado: [{"serie_id":6,"serie_desc":"5\u00ba Ano"}]
+2025-06-30 23:44:24 | modalidade: 63 | escola: 15874269 | periodo: 
+2025-06-30 23:44:24 | SQL: SELECT DISTINCT s.serie_id, s.serie_desc
+                FROM serie s
+                INNER JOIN tipo_modalidade tm ON s.fk_mod_id = tm.id_tipo_modalidade
+                INNER JOIN modalidade m ON tm.id_tipo_modalidade = m.fk_id_modalidade
+                WHERE m.id_modalidade = :modalidade AND m.inep_escola = :escola ORDER BY s.serie_desc
+2025-06-30 23:44:24 | resultado: [{"serie_id":7,"serie_desc":"6\u00ba Ano"}]
+2025-06-30 23:44:28 | modalidade: 63 | escola: 15874269 | periodo: Manhã
+2025-06-30 23:44:28 | SQL: SELECT DISTINCT s.serie_id, s.serie_desc
+                FROM serie s
+                INNER JOIN tipo_modalidade tm ON s.fk_mod_id = tm.id_tipo_modalidade
+                INNER JOIN modalidade m ON tm.id_tipo_modalidade = m.fk_id_modalidade
+                WHERE m.id_modalidade = :modalidade AND m.inep_escola = :escola ORDER BY s.serie_desc
+2025-06-30 23:44:28 | resultado: [{"serie_id":7,"serie_desc":"6\u00ba Ano"}]
+2025-06-30 23:44:32 | modalidade: 64 | escola: 15874269 | periodo: Manhã
+2025-06-30 23:44:32 | SQL: SELECT DISTINCT s.serie_id, s.serie_desc
+                FROM serie s
+                INNER JOIN tipo_modalidade tm ON s.fk_mod_id = tm.id_tipo_modalidade
+                INNER JOIN modalidade m ON tm.id_tipo_modalidade = m.fk_id_modalidade
+                WHERE m.id_modalidade = :modalidade AND m.inep_escola = :escola ORDER BY s.serie_desc
+2025-06-30 23:44:32 | resultado: [{"serie_id":8,"serie_desc":"7\u00ba Ano"}]
+2025-06-30 23:44:35 | modalidade: 58 | escola: 15874269 | periodo: Manhã
+2025-06-30 23:44:35 | SQL: SELECT DISTINCT s.serie_id, s.serie_desc
+                FROM serie s
+                INNER JOIN tipo_modalidade tm ON s.fk_mod_id = tm.id_tipo_modalidade
+                INNER JOIN modalidade m ON tm.id_tipo_modalidade = m.fk_id_modalidade
+                WHERE m.id_modalidade = :modalidade AND m.inep_escola = :escola ORDER BY s.serie_desc
+2025-06-30 23:44:35 | resultado: [{"serie_id":2,"serie_desc":"1\u00ba Ano"}]
+2025-06-30 23:44:39 | modalidade: 63 | escola: 15874269 | periodo: Manhã
+2025-06-30 23:44:39 | SQL: SELECT DISTINCT s.serie_id, s.serie_desc
+                FROM serie s
+                INNER JOIN tipo_modalidade tm ON s.fk_mod_id = tm.id_tipo_modalidade
+                INNER JOIN modalidade m ON tm.id_tipo_modalidade = m.fk_id_modalidade
+                WHERE m.id_modalidade = :modalidade AND m.inep_escola = :escola ORDER BY s.serie_desc
+2025-06-30 23:44:39 | resultado: [{"serie_id":7,"serie_desc":"6\u00ba Ano"}]
+2025-06-30 23:44:42 | modalidade: 64 | escola: 15874269 | periodo: Manhã
+2025-06-30 23:44:42 | SQL: SELECT DISTINCT s.serie_id, s.serie_desc
+                FROM serie s
+                INNER JOIN tipo_modalidade tm ON s.fk_mod_id = tm.id_tipo_modalidade
+                INNER JOIN modalidade m ON tm.id_tipo_modalidade = m.fk_id_modalidade
+                WHERE m.id_modalidade = :modalidade AND m.inep_escola = :escola ORDER BY s.serie_desc
+2025-06-30 23:44:42 | resultado: [{"serie_id":8,"serie_desc":"7\u00ba Ano"}]
+2025-06-30 23:45:01 | modalidade: 58 | escola: 15874269 | periodo: Manhã
+2025-06-30 23:45:01 | SQL: SELECT DISTINCT s.serie_id, s.serie_desc
+                FROM serie s
+                INNER JOIN tipo_modalidade tm ON s.fk_mod_id = tm.id_tipo_modalidade
+                INNER JOIN modalidade m ON tm.id_tipo_modalidade = m.fk_id_modalidade
+                WHERE m.id_modalidade = :modalidade AND m.inep_escola = :escola ORDER BY s.serie_desc
+2025-06-30 23:45:01 | resultado: [{"serie_id":2,"serie_desc":"1\u00ba Ano"}]
+2025-06-30 23:45:06 | modalidade: 63 | escola: 15874269 | periodo: Manhã
+2025-06-30 23:45:06 | SQL: SELECT DISTINCT s.serie_id, s.serie_desc
+                FROM serie s
+                INNER JOIN tipo_modalidade tm ON s.fk_mod_id = tm.id_tipo_modalidade
+                INNER JOIN modalidade m ON tm.id_tipo_modalidade = m.fk_id_modalidade
+                WHERE m.id_modalidade = :modalidade AND m.inep_escola = :escola ORDER BY s.serie_desc
+2025-06-30 23:45:06 | resultado: [{"serie_id":7,"serie_desc":"6\u00ba Ano"}]

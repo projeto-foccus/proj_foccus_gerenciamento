@@ -1,0 +1,42 @@
+INEP DA ESCOLA;NOME DO FUNCIONARIO;CPF;EMAIL;CARGO DE OCUPACAO
+12375642;Adriana Souza Lima;123.456.789-00;adriana.lima@escola.edu.br;Diretor(a) / Gestor(a) de Escola
+12375642;Bruno Henrique Duarte;234.567.890-11;bruno.duarte@escola.edu.br;Diretor(a) / Gestor(a) de Escola
+12375642;Camila Oliveira Nunes;345.678.901-22;camila.nunes@escola.edu.br;Diretor(a) / Gestor(a) de Escola
+12375642;Daniel Teixeira Ramos;456.789.012-33;daniel.ramos@escola.edu.br;Diretor(a) / Gestor(a) de Escola
+12375642;Elisa Martins Barreto;567.890.123-44;elisa.barreto@escola.edu.br;Diretor(a) / Gestor(a) de Escola
+12345678;Felipe Costa Andrade;678.901.234-55;felipe.andrade@escola.edu.br;Professor(a) Regular / Especialista
+12345678;Gabriela Pinto Rocha;789.012.345-66;gabriela.rocha@escola.edu.br;Professor(a) Regular / Especialista
+12345678;Henrique Lima Tavares;890.123.456-77;henrique.tavares@escola.edu.br;Professor(a) Regular / Especialista
+12345678;Isabela Gomes Ferreira;901.234.567-88;isabela.ferreira@escola.edu.br;Professor(a) Regular / Especialista
+12345678;João Paulo Meireles;012.345.678-99;joao.meireles@escola.edu.br;Professor(a) Regular / Especialista
+23456789;Karen Souza Matos;132.546.879-00;karen.matos@escola.edu.br;Supervisor(a) Escolar
+23456789;Leandro Reis Castro;243.657.980-11;leandro.castro@escola.edu.br;Supervisor(a) Escolar
+23456789;Mariana Silva Cardoso;354.768.091-22;mariana.cardoso@escola.edu.br;Supervisor(a) Escolar
+34567890;Natália Lopes Mendes;465.879.102-33;natalia.mendes@escola.edu.br;Supervisor(a) Escolar
+34567890;Otávio Azevedo Pereira;576.980.213-44;otavio.pereira@escola.edu.br;Supervisor(a) Escolar
+34567890;Patrícia Carvalho Lima;687.091.324-55;patricia.lima@escola.edu.br;Supervisor(a) Escolar
+34567890;Rafael Augusto Nogueira;798.102.435-66;rafael.nogueira@escola.edu.br;Fonoaudiologo(a)
+45678901;Sandra Helena Tavares;809.213.546-77;sandra.tavares@escola.edu.br;Fonoaudiologo(a)
+45678901;Tiago Nascimento Luz;910.324.657-88;tiago.luz@escola.edu.br;Fonoaudiologo(a)
+45678901;Vanessa Prado Oliveira;021.435.768-99;vanessa.oliveira@escola.edu.br;Fonoaudiologo(a)
+45678901;Wagner Souza Ribeiro;132.546.879-10;wagner.ribeiro@escola.edu.br;Fonoaudiologo(a)
+56789012;Aline Martins Teixeira;243.657.980-21;aline.teixeira@escola.edu.br;Fonoaudiologo(a)
+56789012;Bruno César Almeida;354.768.091-32;bruno.almeida@escola.edu.br;Supervisor(a) Escolar
+56789012;Cláudia Ramos Vieira;465.879.102-43;claudia.vieira@escola.edu.br;Supervisor(a) Escolar
+67890123;Diego Henrique Santos;576.980.213-54;diego.santos@escola.edu.br;Supervisor(a) Escolar
+67890123;Eliane Freitas Moura;687.091.324-65;eliane.moura@escola.edu.br;Supervisor(a) Escolar
+67890123;Flávio Cardoso Mendes;798.102.435-76;flavio.mendes@escola.edu.br;Supervisor(a) Escolar
+67890123;Giovana Lima Rocha;809.213.546-87;giovana.rocha@escola.edu.br;Supervisor(a) Escolar
+78901234;Hugo Pereira Bastos;910.324.657-98;hugo.bastos@escola.edu.br;Professor(a) Regular / Especialista
+78901234;Ingrid Castro Almeida;021.435.768-09;ingrid.almeida@escola.edu.br;Professor(a) Regular / Especialista
+78901234;Jorge Matos Figueira;132.546.879-19;jorge.figueira@escola.edu.br;Professor(a) Regular / Especialista
+78901234;Kelly Souza Ribeiro;243.657.980-29;kelly.ribeiro@escola.edu.br;Professor(a) Regular / Especialista
+89012345;Lucas Ramos Andrade;354.768.091-39;lucas.andrade@escola.edu.br;Professor(a) Regular / Especialista
+89012345;Mirela Duarte Costa;465.879.102-49;mirela.costa@escola.edu.br;Diretor(a) / Gestor(a) de Escola
+89012345;Nelson Vieira Martins;576.980.213-53;nelson.martins@escola.edu.br;Diretor(a) / Gestor(a) de Escola
+89012345;Olívia Nogueira Lima;687.091.324-64;olivia.lima@escola.edu.br;Diretor(a) / Gestor(a) de Escola
+89012345;Paulo César Barros;798.102.435-75;paulo.barros@escola.edu.br;Diretor(a) / Gestor(a) de Escola
+90123456;Renata Oliveira Braga;809.213.546-86;renata.braga@escola.edu.br;Diretor(a) / Gestor(a) de Escola
+90123456;Sérgio Tavares Rocha;910.324.657-97;sergio.rocha@escola.edu.br;Fonoaudiologo(a)
+90123456;Tatiane Freitas Mendes;021.435.768-08;tatiane.mendes@escola.edu.br;Fonoaudiologo(a)
+90123456;Ubirajara Gonçalves Neto;132.546.879-18;ubirajara.neto@escola.edu.br;Fonoaudiologo(a)

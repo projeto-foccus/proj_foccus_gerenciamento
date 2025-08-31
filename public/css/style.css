@@ -1,0 +1,345 @@
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f1f1;
+    color: #131212;
+    margin: 0;
+    padding: 0;
+    
+}
+body {
+    background: url('/proj_foccus/public/img/tela_azul.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+
+.sidebar {
+    width: 220px;
+    position: fixed;
+    background-color: #f8f5f5; /* Cor de fundo da sidebar escura */
+    color: #fe5f2f; /* Cor do texto da sidebar */
+    height: 100%;
+    padding: 20px;
+    overflow-y: auto;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+   
+}
+
+
+
+
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar a {
+    color: #131212; /* Cor do link na sidebar */
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    transition: background 0.3s ease;
+    
+}
+
+.sidebar a:hover {
+    background-color: #dcdcdc; /* Cor de fundo do link no hover */
+}
+.submenu_escola,
+.submenu_matriculas , .submenu_eixos {
+  overflow: hidden;
+  max-height: 0px;
+  transition: max-height .5s ease, opacity .5s ease;
+  opacity: 0;
+
+}
+
+.sidebar li:hover .submenu_escola, 
+.sidebar li:hover .submenu_matriculas, 
+.sidebar li:hover .submenu_eixos { 
+  opacity: 1; 
+  max-height: 500px;
+  transition: max-height .5s ease, opacity .5s ease;
+}
+
+#formulario-container {
+    position: fixed;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 2%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    
+    width: 70%;  /* Aumentei de 60% para 80% */
+    height: 80%; /* Aumentei de 80% para 90% */
+    
+    overflow-y: scroll;
+}
+
+#formulario-container::-webkit-scrollbar{
+    width: 8px;
+}
+
+#formulario-container::-webkit-scrollbar-thumb{
+    background-color: #a5a5a5;
+    border-radius: 3px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario label {
+    margin-bottom: 5px; /* Espaçamento entre rótulo e campo */
+    font-weight: bold; /* Rótulos em negrito */
+    font-size: 14px; /* Diminui o tamanho da fonte */
+}
+
+.formulario input[type="text"],
+.formulario select {
+    padding: 10px;
+    border: 1px solid #ccc; /* Borda suave */
+    border-radius: 5px; /* Cantos arredondados */
+    margin-bottom: 1%; /* Espaçamento entre os campos */
+    width: 40%; /* Ocupa toda a largura disponível */
+}
+
+.formulario input[type="text"]:focus {
+    outline: none; /* Remove a borda padrão do foco */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Efeito de foco */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Aumenta o espaçamento entre os botões */
+    margin-top: 15px;
+}
+
+.submitbtn, .cancelbtn, .listarbtn {
+    padding: 12px 20px; /* Aumenta o tamanho dos botões */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px; /* Fonte um pouco maior */
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    text-align: center;
+    min-width: 130px; /* Largura mínima maior */
+    text-decoration: none;
+    display: inline-block;
+}
+
+.submitbtn {
+    background-color: #4CAF50; /* Verde suave */
+    color: white;
+}
+
+.cancelbtn {
+    background-color: #FF6B6B; /* Vermelho suave */
+    color: white;
+}
+
+.listarbtn {
+    background-color: #3498db; /* Azul suave */
+    color: white;
+    padding: 12px 20px; /* Mantém o tamanho igual ao dos botões */
+    border-radius: 8px;
+}
+
+.submitbtn:hover {
+    background-color: #45a049;
+}
+
+.cancelbtn:hover {
+    background-color: #e74c3c;
+}
+
+.listarbtn:hover {
+    background-color: #2980b9;
+}
+
+.btn_acao {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn_acao {
+    background-color: #e66d0b; /* Cor de fundo do botão submit */
+    color: white;
+}
+
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+    .sidebar {
+        width: 150px; /* Diminui ainda mais a largura da sidebar */
+    }
+  #formulario-container {
+    
+    padding: 10px; /* Reduz o padding em telas menores */
+  }
+
+  #formulario-cad-aluno input[type="text"],
+  #formulario-cad-aluno select {
+    width: auto;
+  }
+}
+
+/* Adicionando responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%; /* A sidebar ocupa toda a largura */
+        position: relative; /* Deixa de ser fixa */
+        height: auto; /* Ajusta a altura automaticamente */
+    }
+
+    #formulario-container {
+        width: 90%; /* Ajusta a largura para caber em telas menores */
+        height: auto; /* Altura se adapta ao conteúdo */
+        padding: 15px; /* Reduz o espaçamento interno */
+        transform: translate(-50%, -50%); /* Centraliza */
+    }
+
+    .formulario input[type="text"],
+    .formulario select {
+        width: 100%; /* Campos ocupam toda a largura */
+    }
+
+    .btn_acao {
+        font-size: 14px; /* Reduz tamanho da fonte em botões */
+    }
+}
+
+/* Estiliza o link como um botão do Bootstrap */
+.listar-link {
+    display: inline-block; /* Faz o link ser exibido em linha */
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap; /* Evita quebra de linha */
+    padding: .375rem .75rem; /* Padding para aumentar o tamanho do botão */
+    font-size: .875rem; /* Ajusta o tamanho da fonte */
+    font-weight: 400; /* Mantém o peso da fonte */
+    line-height: 1.5; /* Alinha a altura da linha */
+    border-radius: .2rem; /* Rounds corners */
+    color: #fff; /* Cor do texto */
+    text-decoration: none; /* Remove underline padrão */
+}
+
+/* Adiciona o estilo do botão do Bootstrap */
+.listar-link.btn-primary {
+    background-color: #007bff  ;  /* Cor de fundo */
+    border-color: #007bff ; /* Cor da borda */
+}
+
+.listar-link.btn-sm {
+    padding: .30rem .5rem; /* Padding reduzido para tamanho pequeno */
+    font-size: .75rem; /* Reduz tamanho da fonte */
+}
+
+
+
+.horizontal-bar {
+width: calc(100% - 270px); /* Reduz a largura para deixar espaço nas laterais */
+margin: 20px 20px; /* Adiciona espaçamento no topo e nas laterais */
+background-color: #d9e6f7; /* Cor de fundo */
+padding: 16px 20px; /* Espaçamento interno */
+color: #49537e; /* Cor do texto */
+font-family: Arial, sans-serif;
+display: flex;
+justify-content: space-between; /* Espaço entre os itens */
+align-items: center; /* Alinhamento vertical */
+position: fixed; /* Fixa no topo */
+top: 10px; /* Espaçamento do topo */
+left: 260px; /* Espaçamento em relação à sidebar */
+z-index: 1000; /* Mantém acima de outros elementos */
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+border-radius: 10px; /* Bordas arredondadas */
+}
+
+.sidebar ul li a {
+color: #2b3687; /* Define a cor azul para os links do menu */
+}
+
+.sidebar ul li a:hover {
+color: #db7a19; /* Cor mais escura ao passar o mouse */
+}
+.sidebar h2 {
+text-align: center; /* Centraliza o texto */
+width: 100%; /* Garante que o elemento ocupe toda a largura disponível */
+}
+
+.sidebar ul li {
+    background-color: #f7f5f5; /* Tom mais claro, próximo ao fundo do site */
+    border-radius: 10px; /* Mantém cantos arredondados */
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.05); /* Sombra mais suave */
+    margin-bottom: 10px;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.sidebar ul li:hover {
+    background-color: #ebe6e6; /* Um tom levemente mais escuro no hover */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Logo */
+.horizontal-bar .logo {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.horizontal-bar .menu {
+display: flex;
+gap: 10px; /* Espaçamento entre os links */
+margin-right: 35px; /* Espaçamento da borda direita */
+}
+
+
+.horizontal-bar .menu a {
+  text-decoration: none;
+  color: #49537e;
+  font-size: 14px;
+}
+
+.horizontal-bar .menu a:hover {
+  text-decoration: underline;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #d9e6f7;
+  border-radius: 10px;
+}
+
+.menu-logo {
+text-align: center; /* Centraliza a logo */
+margin-bottom: 10px; /* Espaço entre a logo e o texto "Menu" */
+}
+
+.menu-logo img {
+width: 100px; /* Ajuste o tamanho da logo conforme necessário */
+height: auto;
+}
+
+
+
+
+
+
+

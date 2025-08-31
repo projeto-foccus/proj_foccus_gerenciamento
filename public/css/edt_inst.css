@@ -1,0 +1,186 @@
+body {
+    background: url('/proj_foccus/public/img/fundofoc.png') no-repeat center center fixed;
+
+
+
+    background-size: cover;
+}
+/* Estilização geral do formulário */
+#formulario-edt-instituicao {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    max-width: 600px;
+    margin: 30px auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+#formulario-edt-instituicao:hover {
+    transform: scale(1.02);
+}
+
+/* Título estilizado */
+#formulario-edt-instituicao h2 {
+    text-align: center;
+    color: #222;
+    margin-bottom: 25px;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Estilização dos campos */
+#formulario-edt-instituicao .mb-3,
+#formulario-edt-instituicao .elemento {
+    margin-bottom: 20px;
+}
+
+/* Labels aprimorados */
+#formulario-edt-instituicao .form-label {
+    font-weight: 600;
+    color: #444;
+    display: block;
+    margin-bottom: 7px;
+    font-size: 16px;
+}
+
+/* Inputs mais elegantes */
+#formulario-edt-instituicao .form-control {
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Campo de código menor */
+#formulario-edt-instituicao #inst_id {
+    width: 80px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Efeito ao focar nos campos */
+#formulario-edt-instituicao .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+    outline: none;
+}
+
+/* Botões aprimorados */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.button-container button,
+.button-container a {
+    padding: 12px 18px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+    text-decoration: none;
+    color: white;
+    min-width: 140px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+}
+
+.submitbtn {
+    background-color: #28a745;
+}
+
+.submitbtn:hover {
+    background-color: #218838;
+    box-shadow: 0 4px 12px rgba(40, 167, 69, 0.5);
+}
+
+.cancelbtn {
+    background-color: #dc3545;
+}
+
+.cancelbtn:hover {
+    background-color: #c82333;
+    box-shadow: 0 4px 12px rgba(220, 53, 69, 0.5);
+}
+
+.listarbtn {
+    background-color: #007bff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.listarbtn:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.5);
+}
+
+
+
+/* Adiciona um efeito sutil de sombra ao passar o mouse */
+.listar-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
+}
+.listar-link-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
+}
+/* Botões aprimorados */
+.text-center {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    }
+    
+    .text-center button,
+    .text-center a {
+    padding: 12px 18px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+    text-decoration: none;
+    color: white;
+    min-width: 140px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    }
+    
+    /* Botão de salvar */
+    .btn-primary {
+    background-color: #28a745;
+    }
+    
+    .btn-primary:hover {
+    background-color: #218838;
+    box-shadow: 0 4px 12px rgba(40, 167, 69, 0.5);
+    }
+    
+    /* Botão de voltar */
+    .listar-link {
+    background-color: #007bff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    }
+    
+    .listar-link:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.5);
+    }

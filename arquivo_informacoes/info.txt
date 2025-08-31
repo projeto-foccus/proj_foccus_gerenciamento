@@ -1,0 +1,135 @@
+-- --------------------------------------------------------
+-- Servidor:                     127.0.0.1
+-- Versão do servidor:           10.4.18-MariaDB - mariadb.org binary distribution
+-- OS do Servidor:               Win64
+-- HeidiSQL Versão:              12.8.0.6908
+-- --------------------------------------------------------
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+
+-- Copiando estrutura do banco de dados para foccus
+CREATE DATABASE IF NOT EXISTS `foccus` /*!40100 DEFAULT CHARACTER SET utf8mb4 */;
+USE `foccus`;
+
+-- Copiando estrutura para tabela foccus.aluno
+CREATE TABLE IF NOT EXISTS `aluno` (
+  `alu_id` int(11) NOT NULL AUTO_INCREMENT,
+  `alu_dt_cad` date DEFAULT NULL,
+  `alu_ra` varchar(20) NOT NULL,
+  `alu_nome` varchar(200) NOT NULL,
+  `alu_dtnasc` date DEFAULT NULL,
+  `alu_inep` varchar(15) NOT NULL,
+  `alu_nome_resp` varchar(200) DEFAULT NULL,
+  `alu_tipo_parentesco` varchar(100) DEFAULT NULL,
+  `alu_email_resp` varchar(150) DEFAULT NULL,
+  `alu_tel_resp` varchar(20) DEFAULT NULL,
+  PRIMARY KEY (`alu_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=301 DEFAULT CHARSET=utf8mb4;
+
+-- Exportação de dados foi desmarcado.
+
+-- Copiando estrutura para tabela foccus.escola
+CREATE TABLE IF NOT EXISTS `escola` (
+  `esc_id` int(11) NOT NULL AUTO_INCREMENT,
+  `esc_dtcad` date DEFAULT NULL,
+  `esc_inep` varchar(15) NOT NULL,
+  `esc_cnpj` varchar(25) DEFAULT NULL,
+  `esc_razao_social` varchar(200) NOT NULL,
+  `esc_endereco` varchar(250) DEFAULT NULL,
+  `esc_bairro` varchar(100) DEFAULT NULL,
+  `esc_municipio` varchar(100) DEFAULT NULL,
+  `esc_cep` varchar(15) DEFAULT NULL,
+  `esc_uf` varchar(2) DEFAULT NULL,
+  `esc_telefone` varchar(20) DEFAULT NULL,
+  `esc_email` varchar(150) DEFAULT NULL,
+  `esc_gestor` varchar(200) DEFAULT NULL,
+  `esc_coordenador` varchar(200) DEFAULT NULL,
+  PRIMARY KEY (`esc_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4;
+
+-- Exportação de dados foi desmarcado.
+
+-- Copiando estrutura para tabela foccus.instituicao
+CREATE TABLE IF NOT EXISTS `instituicao` (
+  `inst_id` int(11) NOT NULL AUTO_INCREMENT,
+  `inst_razaosocial` varchar(250) NOT NULL,
+  `inst_cnpj` varchar(20) DEFAULT NULL,
+  `inst_endereco` varchar(250) DEFAULT NULL,
+  `inst_bairro` varchar(150) DEFAULT NULL,
+  `inst_municipio` varchar(150) DEFAULT NULL,
+  `inst_cep` varchar(20) DEFAULT NULL,
+  `inst_uf` char(2) DEFAULT NULL,
+  `inst_email` varchar(200) DEFAULT NULL,
+  `inst_tel1` varchar(20) DEFAULT NULL,
+  `inst_tel2` varchar(20) DEFAULT NULL,
+  PRIMARY KEY (`inst_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4;
+
+-- Exportação de dados foi desmarcado.
+
+-- Copiando estrutura para tabela foccus.modalidade
+CREATE TABLE IF NOT EXISTS `modalidade` (
+  `mod_id` int(11) NOT NULL AUTO_INCREMENT,
+  `mod_desc` varchar(100) NOT NULL,
+  PRIMARY KEY (`mod_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4;
+
+-- Exportação de dados foi desmarcado.
+
+-- Copiando estrutura para tabela foccus.orgao
+CREATE TABLE IF NOT EXISTS `orgao` (
+  `org_id` int(11) NOT NULL AUTO_INCREMENT,
+  `org_razaosocial` varchar(250) NOT NULL,
+  `org_cnpj` varchar(20) DEFAULT NULL,
+  `org_endereco` varchar(250) DEFAULT NULL,
+  `org_bairro` varchar(150) DEFAULT NULL,
+  `org_municipio` varchar(150) DEFAULT NULL,
+  `org_cep` varchar(20) DEFAULT NULL,
+  `org_uf` char(2) DEFAULT NULL,
+  `org_email` varchar(200) DEFAULT NULL,
+  `org_tel1` varchar(20) DEFAULT NULL,
+  `org_tel2` varchar(20) DEFAULT NULL,
+  `fk_org_inst_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`org_id`),
+  KEY `fk_org_inst_id` (`fk_org_inst_id`),
+  CONSTRAINT `orgao_ibfk_1` FOREIGN KEY (`fk_org_inst_id`) REFERENCES `instituicao` (`inst_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
+
+-- Exportação de dados foi desmarcado.
+
+-- Copiando estrutura para tabela foccus.serie
+CREATE TABLE IF NOT EXISTS `serie` (
+  `serie_id` int(11) NOT NULL AUTO_INCREMENT,
+  `serie_desc` varchar(50) NOT NULL,
+  `fk_mod_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`serie_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4;
+
+-- Exportação de dados foi desmarcado.
+
+-- Copiando estrutura para tabela foccus.turma
+CREATE TABLE IF NOT EXISTS `turma` (
+  `turma_id` int(11) NOT NULL AUTO_INCREMENT,
+  `turma_desc` varchar(5) NOT NULL,
+  PRIMARY KEY (`turma_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- Exportação de dados foi desmarcado.
+
+/*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
+/*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40111 SET SQL_NOTES=IFNULL(@OLD_SQL_NOTES, 1) */;
+
+
+
+

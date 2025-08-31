@@ -1,0 +1,66 @@
+Razão Social: Prefeitura Municipal de São Bela
+CNPJ: 12.345.678/0001-90
+Endereço: Rua das Flores, 123
+Bairro: Centro
+Município: São Bela
+CEP: 12345-678
+UF: SP
+Email: contato@sãobela.sp.gov.br
+
+
+Prefeitura Municipal de Jardim Alegre
+
+Razão Social: Prefeitura Municipal de Jardim Alegre
+CNPJ: 98.765.432/0001-01
+Endereço: Avenida das Palmeiras, 456
+Bairro: Jardim das Flores
+Município: Jardim Alegre
+CEP: 87654-321
+UF: MG
+Email: atendimento@jardimalegre.mg.gov.br
+Telefone Contato: (31) 8765-4321
+Celular: (31) 99876-5432
+
+
+Prefeitura Municipal de Nova Esperança
+
+Razão Social: Prefeitura Municipal de Nova Esperança
+CNPJ: 56.789.012/0001-23
+Endereço: Rua do Sol, 789
+Bairro: Vila Nova
+Município: Nova Esperança
+CEP: 23456-789
+UF: PR
+Email: contato@novaesperanca.pr.gov.br
+Telefone Contato: (41) 2345-6789
+Celular: (41) 98765-4321
+
+
+
+Prefeitura Municipal de Santa Rosa
+
+Razão Social: Prefeitura Municipal de Santa Rosa
+CNPJ: 12.345.678/0001-45
+Endereço: Rua da Paz, 321
+Bairro: Centro
+Município: Santa Rosa
+CEP: 34567-890
+UF: RS
+Email: prefeitura@santarosa.rs.gov.br
+Telefone Contato: (51) 3456-7890
+
+
+Prefeitura Municipal de Vila Verde
+
+Razão Social: Prefeitura Municipal de Vila Verde
+CNPJ: 23.456.789/0001-67
+Endereço: Avenida Verde, 234
+Bairro: Jardim Verde
+Município: Vila Verde
+CEP: 45678-901
+UF: BA
+Email: contato@vilaverde.ba.gov.br
+Telefone Contato: (71) 4567-8901
+Celular: (71) 98765-4321
+
+
